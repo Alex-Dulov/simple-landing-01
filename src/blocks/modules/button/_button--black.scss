@@ -1,0 +1,11 @@
+.button--black {
+  color: var(--white);
+  background-color: var(--black);
+  border: 2px solid var(--black);
+}
+
+.button--black:hover {
+  color: var(--black);
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+}

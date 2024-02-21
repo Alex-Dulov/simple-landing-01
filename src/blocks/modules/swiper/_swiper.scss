@@ -1,0 +1,77 @@
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.swiper-slide,
+.swiper-wrapper {
+  transform: translate3d(0px, 0, 0);
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.swiper-pagination-bullets {
+  display: flex;
+  column-gap: 6px;
+}
+
+.swiper-pagination-bullet {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--black);
+}
+
+.swiper-nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 44px;
+  background-color: var(--black);
+  transition: .3s;
+
+  @include media-breakpoint-up(md) {
+    height: 44px;
+    width: 44px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 36px;
+    width: 36px;
+  }
+}
+
+.swiper-nav-button:hover {
+  background-color: var(--yellow);
+}
+
+.swiper-nav-button .icon {
+  font-size: 18px;
+  color: var(--white);
+}
+
+.swiper-nav-button.swiper-button-disabled {
+  background-color: var(--grey-3);
+}

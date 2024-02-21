@@ -1,0 +1,9 @@
+.button--md {
+  @include media-breakpoint-up(lg) {
+    padding: 18px 46px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 14px 32px;
+  }
+}

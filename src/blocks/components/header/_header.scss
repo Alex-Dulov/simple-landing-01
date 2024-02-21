@@ -1,0 +1,121 @@
+.header {
+  position: relative;
+  overflow: hidden;
+
+  @include media-breakpoint-up(lg) {
+    height: 700px;
+  }
+
+  @include media-breakpoint-down(md) {
+    height: 774px;
+  }
+}
+
+.header__container {
+  position: relative;
+  z-index: 2;
+}
+
+.header__body {
+  margin-right: auto;
+
+  @include media-breakpoint-up(md) {
+    width: 542px;
+    padding-block: 26px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-block: 18px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  column-gap: 6px;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 62px;
+  }
+
+  @include media-breakpoint-down(md) {
+    height: 28px;
+    margin-bottom: 46px;
+  }
+}
+
+.header__logo-label {
+  color: #595653;
+  font-family: "Golos Text";
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 16.651px;
+    line-height: 17.983px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 14.417558670043945px;
+    line-height: 110%;
+  }
+}
+
+.header__title {
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.header__title-item {
+  display: block;
+  width: 100%;
+}
+
+.header__description {
+  font-size: 18px;
+  line-height: 130%;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}
+
+.header__background-picture {
+  position: absolute;
+  left: 50%;
+  display: flex;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  @include media-breakpoint-up(lg) {
+    align-items: center;
+  }
+
+  @include media-breakpoint-down(md) {
+    align-items: end;
+  }
+}
+
+.header__background-image {
+  min-width: 100vw;
+  min-height: 100%;
+}
+
+.header__buttons {
+  display: flex;
+
+  @include media-breakpoint-up(lg) {
+    column-gap: 16px;
+  }
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+    row-gap: 14px;
+  }
+}

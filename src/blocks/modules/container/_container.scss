@@ -1,0 +1,25 @@
+.container {
+  margin: 0 auto;
+
+  @include media-breakpoint-down(xs) {
+    padding-inline: 20px;
+    width: 100%;
+  }
+
+  @include media-breakpoint-only(sm) {
+    padding-inline: 64px;
+    width: 100%;
+  }
+
+  @include media-breakpoint-only(md) {
+    width: 720px;
+  }
+
+  @include media-breakpoint-only(lg) {
+    width: 960px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 1222px;
+  }
+}

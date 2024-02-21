@@ -1,0 +1,5 @@
+.no-br--lg {
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}

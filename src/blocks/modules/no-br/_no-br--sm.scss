@@ -1,0 +1,5 @@
+.no-br--sm {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
